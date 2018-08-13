@@ -1,0 +1,1 @@
+To create the prog bar images, first color the dots white in paint, then ALSO color the background red. Makes it easy to remove the red part in Preview (Mac).
