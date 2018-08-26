@@ -75,7 +75,7 @@ a {
 /* BACKGROUND IMAGE */
 .slide::after {
     background: url(../images/globe.png);
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
     content: "";
     opacity: 0.1;
@@ -84,7 +84,7 @@ a {
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: -1;  
+    z-index: -1;
     padding-top: 56.25%;
     overflow: hidden;
     height: 100%;
@@ -112,7 +112,7 @@ a {
 
 .textBlock {
     font-size: 0.8em;
-    width: 700px;
+    width: 800px;
     height: auto;
     text-align: left;
     padding: 10px 10px 10px 20px;
@@ -121,15 +121,20 @@ a {
     box-shadow: 0px 0px 20px #000000;
 }
 .textBlock.furtherReading {
-    font-size: 16px;
+    font-size: 150%;
     width: 90%;
 }
-.textBlock.furtherReading span {
-    color: #418FDE;
-    font-size: 24px;
-}
-.textBlock.furtherReading a {
+.furtherReading {
     color: #FFFFFF;
+    font-size: 150%;
+    padding: 10% 1%;
+}
+.furtherReading a {
+    color: #FFFFFF;
+    font-size: 100%;
+}
+.furtherReading a:hover {
+    color: #418FDE;
 }
 
 .imgContainer-3 {
@@ -190,12 +195,9 @@ table tr td {
     color: rgb(65, 143, 222);
     text-decoration: none !important;
     font-size: 150%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    margin: 5%;
     padding: 5%;
+    height: 20px;
 }
 .clickText:hover {
     color: rgb(77, 77, 77);
@@ -284,7 +286,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
 .w3-btn,.w3-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 .w3-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
-.w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
 .w3-btn.w3-disabled:hover,.w3-btn:disabled:hover{box-shadow:none}
 .w3-badge,.w3-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.w3-badge{border-radius:50%}
@@ -330,7 +332,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-cell-top{vertical-align:top}.w3-cell-middle{vertical-align:middle}.w3-cell-bottom{vertical-align:bottom}
 .w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
 @media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
-.w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}	
+.w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}
 .w3-hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
 .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
 @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
@@ -504,7 +506,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     padding-top: 0;
     background-color: #418FDE !important;
     font-size: 110%;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     position: relative;
     top: 0;
